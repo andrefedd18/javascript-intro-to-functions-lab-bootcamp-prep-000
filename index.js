@@ -4,6 +4,10 @@ function shout(string) {
 function whisper(string) {
  return string.toLowerCase()
 }
-function logShout(string) {
- console.log(`Hello!`)
-}
+describe('Hello world', function () {
+it('says hello', function () {
+    spyOn(console,'log').and.callThrough();
+    comp.helloWorld();
+    expect(console.log).toHaveBeenCalled();
+    });
+});
