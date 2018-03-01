@@ -4,10 +4,4 @@ function shout(string) {
 function whisper(string) {
  return string.toLowerCase()
 }
-describe('Hello world', function () {
-it('says hello', function () {
-    spyOn(console,'log').and.callThrough();
-    comp.helloWorld();
-    expect(console.log).toHaveBeenCalled();
-    });
-});
+
